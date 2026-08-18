@@ -70,7 +70,7 @@ Requires the Compact toolchain (language 0.23; developed against `compactc` 0.31
 
 ```bash
 npm install
-npm run compact      # compile contract/chips.compact -> contract/managed/chips
+npm run compile      # compile contract/chips.compact -> contract/managed/chips
 npm test             # 8 tests, pure simulator: no node, no proof server, no docker
 npm run typecheck
 ```

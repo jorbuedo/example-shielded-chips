@@ -14,7 +14,7 @@
 // limitations under the License.
 
 import { describe, expect, it } from 'vitest';
-import { ChipsSimulator } from './chips-simulator.js';
+import { ChipsSimulator } from '../chips-simulator.js';
 
 /** A distinguishable 32-byte value. */
 const bytes32 = (tag: number): Uint8Array => Uint8Array.from({ length: 32 }, (_, i) => (i === 0 ? tag : 0));

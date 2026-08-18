@@ -7,10 +7,10 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "compact": "compact compile contract/chips.compact contract/managed/chips",
+    "compile": "compact compile contract/chips.compact contract/managed/chips",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "ci": "npm run compact && npm run typecheck && npm run test"
+    "ci": "npm run compile && npm run typecheck && npm run test"
   },
   "dependencies": {
     "@midnight-ntwrk/compact-runtime": "0.16.0",
